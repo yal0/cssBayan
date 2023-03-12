@@ -2,16 +2,61 @@
     display: none;
 }
 
-.accordion p {
+/* чекбокс выбран -- прячем контент */
+.accordion__chk:checked ~ p {  
+    max-height: 0;
+    opacity: 0;
+    transition: 1s;
+}
+
+/* чекбокс не выбран -- показываем контент */
+.accordion__item p {
     overflow: hidden;
     max-height: 30vh;
     opacity: 1;
     transition:1s;
 }
 
-/* чекбокс выбран -- прячем контент */
-.accordion .accordion__chk:checked ~ p {  
-    max-height: 0;
-    opacity: 0;
+/* показываем контент при наведении мыши */
+.accordion__item:hover p {
+    overflow: hidden;
+    max-height: 30vh;
+    opacity: 1;
+    transition:1s;
+}
+
+/* при наведении на список показываем крестики и плюсики для каждого пункта списка */
+.accordion:hover .accordion__chk:checked ~ h2 {  
+    color: #000000;
+    background: url('../images/plus.svg') no-repeat right top/3%;
     transition: 1s;
+}
+
+.accordion:hover .accordion__chk ~ h2 {  
+    color: #000000;
+    background: url('../images/cross.svg') no-repeat right top/3%;
+    transition: 1s;
+}
+
+/* когда мышь за пределами списка убираем крестики и плюсики и подсвечиваем закрытые пункты */
+.accordion__chk:checked ~ h2 {  
+    color: #cc071e;
+    background: url('../images/plus.svg') no-repeat right top/0%;
+    transition: 1s;
+}
+
+.accordion__chk ~ h2 {  
+    color: #000000;
+    background: url('../images/cross.svg') no-repeat right top/0%;
+    transition: 1s;
+}
+
+/* при нажатии на пункт списка меняем курсор и подсвечиваем заголовок */
+.accordion__item:active {
+    cursor: grabbing;
+}
+
+.accordion__item:active h2
+{
+    color: #cc071e !important;
 }
