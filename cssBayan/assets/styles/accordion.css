@@ -1,0 +1,16 @@
+/* input[type=checkbox] {
+    display: none;
+} */
+
+.accordion p {
+    overflow: hidden;
+    max-height: 250px;
+    opacity: 1;
+    transition:1s;
+}
+
+.accordion li input[type=checkbox]:checked ~ p {  
+    max-height: 0;
+    opacity: 0;
+    transition: 1s;
+}
