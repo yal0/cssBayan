@@ -1,15 +1,16 @@
-/* input[type=checkbox] {
+.accordion__chk {
     display: none;
-} */
+}
 
 .accordion p {
     overflow: hidden;
-    max-height: 250px;
+    max-height: 30vh;
     opacity: 1;
     transition:1s;
 }
 
-.accordion li input[type=checkbox]:checked ~ p {  
+/* чекбокс выбран -- прячем контент */
+.accordion li .accordion__chk:checked ~ p {  
     max-height: 0;
     opacity: 0;
     transition: 1s;
