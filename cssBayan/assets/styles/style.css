@@ -17,6 +17,7 @@ h1 {
 
 .accordion__item-header {
     font-size: 1.7rem;
+    padding-right: 2.2rem;
 }
 
 .accordion__item {
