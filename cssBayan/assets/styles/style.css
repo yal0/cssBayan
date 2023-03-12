@@ -10,16 +10,19 @@ h1 {
     font-size: 2.5rem;
 }
 
-.wrapper {
+.accordion {
     width: 80vw;
     margin: 5vh auto 2vh;
 }
 
-.accordion {
-    
+.accordion__item-header {
+    font-size: 1.7rem;
 }
 
-.accordion_item {
+.accordion__item {
+    font-size: 1rem;
+    cursor: pointer;
+    display: block;
     background: #ffffff;
     margin-bottom: 3vh;
     padding: 1.5%;
@@ -27,13 +30,6 @@ h1 {
   -webkit-tap-highlight-color: transparent;
 }
 
-.accordion_header {
-    font-size: 2rem;
-    cursor: pointer;
-    display: block;
-    width: 100%;
-}
-
-.accordion_mem {
+.accordion__image {
     height: 30vh;
 }

@@ -10,7 +10,7 @@
 }
 
 /* чекбокс выбран -- прячем контент */
-.accordion li .accordion__chk:checked ~ p {  
+.accordion .accordion__chk:checked ~ p {  
     max-height: 0;
     opacity: 0;
     transition: 1s;
