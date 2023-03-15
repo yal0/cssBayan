@@ -27,41 +27,6 @@
     transition: 0.5s;
 }
 
-/* показываем контент при наведении мыши */
-.accordion__item:hover p {
-    overflow: hidden;
-    max-height: 50vh;
-    opacity: 1;
-    transition: 0.5s;
-}
-
-.accordion__item:hover p img {
-    height: 50vh;
-    transition: 0.5s;
-}
-
-/* при наведении на список показываем крестики и плюсики для каждого пункта списка */
-.accordion:hover .accordion__chk:checked ~ h2 {  
-    color: #000000;
-    background: url('../images/cross.svg') no-repeat right top;
-    background-size: 2rem;
-    transition: 0.5s;
-}
-
-.accordion:hover .accordion__chk ~ h2 {  
-    color: #000000;
-    background: url('../images/plus.svg') no-repeat right top;
-    background-size: 2rem;
-    transition: 0.5s;
-}
-
-.accordion__item:hover .accordion__chk ~ h2 {  
-    color: #000000;
-    background: url('../images/cross.svg') no-repeat right top;
-    background-size: 2rem;
-    transition: 0.5s;
-}
-
 /* когда мышь за пределами списка убираем крестики и плюсики и подсвечиваем закрытые пункты */
 .accordion__chk:checked ~ h2 {  
     color: #000000;
@@ -85,3 +50,5 @@
     color: #cc071e !important;
     transition: 0s !important;
 }
+
+/**************** hover ******************/
